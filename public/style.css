@@ -19,3 +19,43 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+
+.red {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  z-index: -1;
+}
+.yellow {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  z-index: -1;
+}
+.green {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  z-index: -1;
+}
+.blue {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  z-index: -1;
+}
+
+.container {
+  height: 600px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  top: 20px;
+  left: 20px;
+}
