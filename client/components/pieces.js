@@ -8,7 +8,7 @@ class Piece extends Component {
     for(let i = 0; i < this.props.dieResult; i++){
       this.props.move(this.props.currentPlayer, this.props.id)
     }
-    let position = this.props[currentPlayer + 'Player']['piece' + this.props.id].position
+    let position = this.props[this.props.currentPlayer + 'Player']['piece' + this.props.id].position
     if(position.color === this.props.currentPlayer){
       this.props.jump(this.props.currentPlayer, this.props.id)
     }
