@@ -49,9 +49,10 @@ export default function (state = initialState, action) {
       {
         let newState = {
           ...state,
+          undeployed: [...state.undeployed, action.piece]
         }
         let position = redHangar
-        newState[action.type] = { position }
+        newState[action.piece] = { position }
         return newState
       }
     default:

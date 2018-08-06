@@ -18,19 +18,24 @@ export const diceRoll = () => ({
 export default function (state = initialState, action) {
   switch (action.type) {
     case NEW_TURN:
-      return {
+      if(state.dieResult === 6){
+        return {
+          ...state,
+          dieResult: null
+        }
+      }
+      else {
+        return {
         ...state,
         currentPlayer: state.playerQueue[0],
         playerQueue: [...state.playerQueue.slice(1), state.currentPlayer],
         dieResult: null
+        }
       }
     case DICE_ROLL:
       {let newState = {
         ...state,
         dieResult: Math.floor(Math.random() * 6) + 1
-      }
-      if(newState.dieResult === 6){
-        newState.playerQueue = [state.currentPlayer, ...state.playerQueue]
       }
       return newState}
     default:
