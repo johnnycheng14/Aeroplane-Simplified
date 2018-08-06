@@ -5,15 +5,10 @@ const initialState = {
 }
 
 const NEW_TURN = 'NEW_TURN'
-const REPEAT_TURN = 'REPEAT_TURN'
 const DICE_ROLL = 'DICE_ROLL'
 
 export const newTurn = () => ({
   type: NEW_TURN
-})
-
-export const repeatTurn = () => ({
-  type: REPEAT_TURN
 })
 
 export const diceRoll = () => ({
@@ -26,19 +21,18 @@ export default function (state = initialState, action) {
       return {
         ...state,
         currentPlayer: state.playerQueue[0],
-        playerQueue: state.playerQueue.slice(1),
+        playerQueue: [...state.playerQueue.slice(1), state.currentPlayer],
         dieResult: null
       }
-    case REPEAT_TURN:
-      return {
-        ...state,
-        playerQueue: [state.currentPlayer, ...state.playerQueue]
-      }
     case DICE_ROLL:
-      return {
+      {let newState = {
         ...state,
         dieResult: Math.floor(Math.random() * 6) + 1
       }
+      if(newState.dieResult === 6){
+        newState.playerQueue = [state.currentPlayer, ...state.playerQueue]
+      }
+      return newState}
     default:
       return state
   }

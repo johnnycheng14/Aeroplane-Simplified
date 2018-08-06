@@ -75,6 +75,7 @@ button {
   height: 90px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 20px
 }
 
 #roll {
@@ -97,4 +98,9 @@ button {
 .piece-action {
   display: flex;
   flex-direction: column;
+}
+
+#pass {
+  margin-top: 50px;
+  font-size: 20px;
 }

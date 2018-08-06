@@ -32,8 +32,8 @@ export default function (state = initialState, action) {
         let newState = {
           ...state,
         }
-        let position = newState[action.type].next
-        newState[action.type] = { position }
+        let position = state['piece' + action.piece].position
+        newState['piece' + action.piece] = { position: position.next }
         return newState
       }
     case JUMP_PIECE + 'blue':
@@ -41,8 +41,8 @@ export default function (state = initialState, action) {
         let newState = {
           ...state,
         }
-        let position = newState[action.type].jump
-        newState[action.type] = { position }
+        let position = state['piece' + action.piece].position
+        newState['piece' + action.piece] = { position: position.jump }
         return newState
       }
     case RETURN_PIECE + 'blue':
