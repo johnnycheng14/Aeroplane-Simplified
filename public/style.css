@@ -52,10 +52,49 @@ form div {
   flex-wrap: wrap;
 }
 
-img {
+.container img {
   position: relative;
   height: 60px;
   width: 60px;
   top: 20px;
   left: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly
+}
+
+#player-action {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 90px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#roll {
+  font-size: 50px;
+}
+
+#piece {
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+#piece-action-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.piece-action {
+  display: flex;
+  flex-direction: column;
 }

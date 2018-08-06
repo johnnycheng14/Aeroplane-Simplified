@@ -1,14 +1,12 @@
 import React from 'react'
 import Board from './components/board'
+import Action from './components/action'
 
 const App = () => {
   return (
     <div className="main">
-      Hello World!!!
       <Board />
-      {/* Player Turn */}
-      {/* Dice Roll BoardComponent */}
-      {/* Piece Component x4 */}
+      <Action />
     </div>
   )
 }

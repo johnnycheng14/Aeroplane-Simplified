@@ -1,96 +1,32 @@
-function Node(color, coordinates) {
-  return {
-    color,
-    coordinates
-  }
-
-}
+const Node = color => ({
+  color
+})
 
 export const redHangar = new Node('red')
 export const yellowHangar = new Node('yellow')
 export const blueHangar = new Node('blue')
 export const greenHangar = new Node('green')
 
-const boardSpace1 = new Node('red', 'top: 80.9vmin; left: 31.3vmin')
-const boardSpace2 = new Node('yellow', 'top: 75.5vmin; left: 31.3vmin')
-const boardSpace3 = new Node('blue', 'top: 69.5vmin; left: 33.3vmin')
-const boardSpace4 = new Node('green', 'top: 65.6vmin; left: 29.2vmin')
-const boardSpace5 = new Node('red', 'top: 67.5vmin; left: 23.2vmin')
-const boardSpace6 = new Node('yellow', 'top: 67.5vmin; left: 17.9vmin')
-const boardSpace7 = new Node('blue', 'top: 65.5vmin; left: 11.9vmin;')
-const boardSpace8 = new Node('green', 'top: 59.4vmin; left: 9.8vmin')
-const boardSpace9 = new Node('red', 'top: 54.1vmin; left: 9.8vmin')
-const boardSpace10 = new Node('yellow', 'top: 48.7vmin; left: 9.8vmin')
-const boardSpace11 = new Node('blue', 'top: 43.6vmin; left: 9.8vmin')
-const boardSpace12 = new Node('green', 'top: 38vmin; left: 9.8vmin')
-const boardSpace13 = new Node('red', 'top: 32vmin; left: 12vmin')
-const boardSpace14 = new Node('yellow', 'top: 30vmin; left: 17.9vmin')
-const boardSpace15 = new Node('blue', 'top: 30vmin; left: 23.2vmin')
-const boardSpace16 = new Node('green', 'top: 32.1vmin; left: 29.3vmin')
-const boardSpace17 = new Node('red', 'top: 28.1vmin; left: 33.3vmin')
-const boardSpace18 = new Node('yellow', 'top: 22vmin; left: 31.3vmin')
-const boardSpace19 = new Node('blue', 'top: 16.6vmin; left: 31.3vmin')
-const boardSpace20 = new Node('green', 'top: 10.7vmin; left: 33.3vmin')
-const boardSpace21 = new Node('red', 'top: 8.6vmin; left: 39.3vmin')
-const boardSpace22 = new Node('yellow', 'top: 8.6vmin; left: 44.6vmin')
-const boardSpace23 = new Node('blue', 'top: 8.6vmin; left: 50vmin')
-const boardSpace24 = new Node('green', 'top: 8.6vmin; left: 55.3vmin')
-const boardSpace25 = new Node('red', 'top: 8.6vmin; left: 60.6vmin')
-const boardSpace26 = new Node('yellow', 'top: 10.7vmin; left: 66.7vmin')
-const boardSpace27 = new Node('blue', 'top: 16.6vmin; left: 68.7vmin')
-const boardSpace28 = new Node('green', 'top: vmin; left: 68.7vmin')
-const boardSpace29 = new Node('red', 'top: vmin; left: vmin')
-const boardSpace30 = new Node('yellow', 'top: vmin; left: vmin')
-const boardSpace31 = new Node('blue', 'top: vmin; left: vmin')
-const boardSpace32 = new Node('green', 'top: vmin; left: vmin')
-const boardSpace33 = new Node('red', 'top: vmin; left: vmin')
-const boardSpace34 = new Node('yellow', 'top: 38vmin; left: vmin')
-const boardSpace35 = new Node('blue', 'top: 43.6vmin; left: vmin')
-const boardSpace36 = new Node('green', 'top: 48.7vmin; left: vmin')
-const boardSpace37 = new Node('red', 'top: 54.1vmin; left: vmin')
-const boardSpace38 = new Node('yellow', 'top: 59.4vmin; left: vmin')
-const boardSpace39 = new Node('blue', 'top: 65.5vmin; left: vmin')
-const boardSpace40 = new Node('green', 'top: vmin; left: vmin')
-const boardSpace41 = new Node('red', 'top: vmin; left: vmin')
-const boardSpace42 = new Node('yellow', 'top: 65.6vmin; left: 70.8vmin')
-const boardSpace43 = new Node('blue', 'top: 69.5vmin; left: 66.7vmin')
-const boardSpace44 = new Node('green', 'top: 75.5vmin; left: 68.7vmin')
-const boardSpace45 = new Node('red', 'top: 80.9vmin; left: 68.7vmin')
-const boardSpace46 = new Node('yellow', 'top: 86.9vmin; left: 66.7vmin')
-const boardSpace47 = new Node('blue', 'top: 88.8vmin; left: 60.6vmin')
-const boardSpace48 = new Node('green', 'top: 88.8vmin; left: 55.3vmin')
-const boardSpace49 = new Node('red', 'top: 88.8vmin; left: 50vmin')
-const boardSpace50 = new Node('yellow', 'top: 88.8vmin; left: 44.6vmin')
-const boardSpace51 = new Node('blue', 'top: 88.8vmin; left: 39.3vmin')
-const boardSpace52 = new Node('green', 'top: 86.9vmin; left: 33.3vmin')
-
-const redLadder1 = new Node('red', 'top: vmin; left: vmin')
-const redLadder2 = new Node('red', 'top: vmin; left: vmin')
-const redLadder3 = new Node('red', 'top: vmin; left: vmin')
-const redLadder4 = new Node('red', 'top: vmin; left: vmin')
-const redLadder5 = new Node('red', 'top: vmin; left: vmin')
-const redLadder6 = new Node('red', 'top: vmin; left: vmin')
-
-const yellowLadder1 = new Node('yellow', 'top: vmin; left: vmin')
-const yellowLadder2 = new Node('yellow', 'top: vmin; left: vmin')
-const yellowLadder3 = new Node('yellow', 'top: vmin; left: vmin')
-const yellowLadder4 = new Node('yellow', 'top: vmin; left: vmin')
-const yellowLadder5 = new Node('yellow', 'top: vmin; left: vmin')
-const yellowLadder6 = new Node('yellow', 'top: vmin; left: vmin')
-
-const blueLadder1 = new Node('blue', 'top: vmin; left: vmin')
-const blueLadder2 = new Node('blue', 'top: vmin; left: vmin')
-const blueLadder3 = new Node('blue', 'top: vmin; left: vmin')
-const blueLadder4 = new Node('blue', 'top: vmin; left: vmin')
-const blueLadder5 = new Node('blue', 'top: vmin; left: vmin')
-const blueLadder6 = new Node('blue', 'top: vmin; left: vmin')
-
-const greenLadder1 = new Node('green', 'top: vmin; left: vmin')
-const greenLadder2 = new Node('green', 'top: vmin; left: vmin')
-const greenLadder3 = new Node('green', 'top: vmin; left: vmin')
-const greenLadder4 = new Node('green', 'top: vmin; left: vmin')
-const greenLadder5 = new Node('green', 'top: vmin; left: vmin')
-const greenLadder6 = new Node('green', 'top: vmin; left: vmin')
+const boardSpace1 = new Node('red')
+const boardSpace2 = new Node('yellow')
+const boardSpace3 = new Node('blue')
+const boardSpace4 = new Node('green')
+const boardSpace5 = new Node('red')
+const boardSpace6 = new Node('yellow')
+const boardSpace7 = new Node('blue')
+const boardSpace8 = new Node('green')
+const boardSpace9 = new Node('red')
+const boardSpace10 = new Node('yellow')
+const boardSpace11 = new Node('blue')
+const boardSpace12 = new Node('green')
+const boardSpace13 = new Node('red')
+const boardSpace14 = new Node('yellow')
+const boardSpace15 = new Node('blue')
+const boardSpace16 = new Node('green')
+const boardSpace17 = new Node('red')
+const boardSpace18 = new Node('yellow')
+const boardSpace19 = new Node('blue')
+const boardSpace20 = new Node('green')
 
 boardSpace1.next = boardSpace2
 boardSpace2.next = boardSpace3
@@ -111,118 +47,35 @@ boardSpace16.next = boardSpace17
 boardSpace17.next = boardSpace18
 boardSpace18.next = boardSpace19
 boardSpace19.next = boardSpace20
-boardSpace20.next = boardSpace21
-boardSpace21.next = boardSpace22
-boardSpace22.next = boardSpace23
-boardSpace23.next = boardSpace24
-boardSpace24.next = boardSpace25
-boardSpace25.next = boardSpace26
-boardSpace26.next = boardSpace27
-boardSpace27.next = boardSpace28
-boardSpace28.next = boardSpace29
-boardSpace29.next = boardSpace30
-boardSpace30.next = boardSpace31
-boardSpace31.next = boardSpace32
-boardSpace32.next = boardSpace33
-boardSpace33.next = boardSpace34
-boardSpace34.next = boardSpace35
-boardSpace35.next = boardSpace36
-boardSpace36.next = boardSpace37
-boardSpace37.next = boardSpace38
-boardSpace38.next = boardSpace39
-boardSpace39.next = boardSpace40
-boardSpace40.next = boardSpace41
-boardSpace41.next = boardSpace42
-boardSpace42.next = boardSpace43
-boardSpace43.next = boardSpace44
-boardSpace44.next = boardSpace45
-boardSpace45.next = boardSpace46
-boardSpace46.next = boardSpace47
-boardSpace47.next = boardSpace48
-boardSpace48.next = boardSpace49
-boardSpace49.next = boardSpace50
-boardSpace50.next = boardSpace51
-boardSpace51.next = boardSpace52
-boardSpace52.next = boardSpace1
+boardSpace20.next = boardSpace1
 
 boardSpace1.jump = boardSpace5
 boardSpace2.jump = boardSpace6
 boardSpace3.jump = boardSpace7
-boardSpace4.flight = boardSpace16
+boardSpace4.jump = boardSpace8
 boardSpace5.jump = boardSpace9
 boardSpace6.jump = boardSpace10
 boardSpace7.jump = boardSpace11
 boardSpace8.jump = boardSpace12
 boardSpace9.jump = boardSpace13
-boardSpace10.ladder = redLadder1
+boardSpace10.jump = boardSpace14
 boardSpace11.jump = boardSpace15
 boardSpace12.jump = boardSpace16
 boardSpace13.jump = boardSpace17
 boardSpace14.jump = boardSpace18
 boardSpace15.jump = boardSpace19
 boardSpace16.jump = boardSpace20
-boardSpace17.flight = boardSpace29
-boardSpace18.jump = boardSpace22
-boardSpace19.jump = boardSpace23
-boardSpace20.jump = boardSpace24
-boardSpace21.jump = boardSpace25
-boardSpace22.jump = boardSpace26
-boardSpace23.ladder = blueLadder1
-boardSpace24.jump = boardSpace28
-boardSpace25.jump = boardSpace29
-boardSpace26.jump = boardSpace30
-boardSpace27.jump = boardSpace31
-boardSpace28.jump = boardSpace32
-boardSpace29.jump = boardSpace33
-boardSpace30.flight = boardSpace42
-boardSpace31.jump = boardSpace35
-boardSpace32.jump = boardSpace36
-boardSpace33.jump = boardSpace37
-boardSpace34.jump = boardSpace38
-boardSpace35.jump = boardSpace39
-boardSpace36.ladder = greenLadder1
-boardSpace37.jump = boardSpace41
-boardSpace38.jump = boardSpace42
-boardSpace39.jump = boardSpace43
-boardSpace40.jump = boardSpace44
-boardSpace41.jump = boardSpace45
-boardSpace42.jump = boardSpace46
-boardSpace43.flight = boardSpace3
-boardSpace44.jump = boardSpace48
-boardSpace45.jump = boardSpace49
-boardSpace46.jump = boardSpace50
-boardSpace47.jump = boardSpace51
-boardSpace48.jump = boardSpace52
-boardSpace49.ladder = redLadder1
-boardSpace50.jump = boardSpace2
-boardSpace51.jump = boardSpace3
-boardSpace52.jump = boardSpace4
-
-redLadder1.next = redLadder2
-redLadder2.next = redLadder3
-redLadder3.next = redLadder4
-redLadder4.next = redLadder5
-redLadder5.next = redLadder6
-
-yellowLadder1.next = yellowLadder2
-yellowLadder2.next = yellowLadder3
-yellowLadder3.next = yellowLadder4
-yellowLadder4.next = yellowLadder5
-yellowLadder5.next = yellowLadder6
-
-blueLadder1.next = blueLadder2
-blueLadder2.next = blueLadder3
-blueLadder3.next = blueLadder4
-blueLadder4.next = blueLadder5
-blueLadder5.next = blueLadder6
-
-greenLadder1.next = greenLadder2
-greenLadder2.next = greenLadder3
-greenLadder3.next = greenLadder4
-greenLadder4.next = greenLadder5
-greenLadder5.next = greenLadder6
+boardSpace17.jump = boardSpace1
+boardSpace18.jump = boardSpace2
+boardSpace19.jump = boardSpace3
+boardSpace20.jump = boardSpace4  
 
 redHangar.next = boardSpace1
-yellowHangar.next = boardSpace14
-blueHangar.next = boardSpace27
-greenHangar.next = boardSpace40
+yellowHangar.next = boardSpace6
+blueHangar.next = boardSpace11
+greenHangar.next = boardSpace16
+
+boardSpace17.home = true
+boardSpace12.home = true
+boardSpace7.home = true
+boardSpace2.home = true

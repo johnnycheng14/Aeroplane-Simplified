@@ -1,6 +1,6 @@
 import { blueHangar } from '../board'
 
-import {DEPLOY_PIECE, MOVE_PIECE, JUMP_PIECE, FLY_PIECE, RETURN_PIECE} from './player'
+import {DEPLOY_PIECE, MOVE_PIECE, JUMP_PIECE, RETURN_PIECE} from './player'
 
 const initialState = {
   piece1: {
@@ -12,10 +12,7 @@ const initialState = {
   piece3: {
     position: blueHangar
   },
-  piece4: {
-    position: blueHangar
-  },
-  undeployed: ['piece1', 'piece2', 'piece3', 'piece4']
+  undeployed: ['piece1', 'piece2', 'piece3']
 }
 
 export default function (state = initialState, action) {
@@ -45,15 +42,6 @@ export default function (state = initialState, action) {
           ...state,
         }
         let position = newState[action.type].jump
-        newState[action.type] = { position }
-        return newState
-      }
-    case FLY_PIECE + 'blue':
-      {
-        let newState = {
-          ...state,
-        }
-        let position = newState[action.type].flight
         newState[action.type] = { position }
         return newState
       }

@@ -6,16 +6,20 @@ import redPlayer from './redPlayer'
 import yellowPlayer from './yellowPlayer'
 import bluePlayer from './bluePlayer'
 import greenPlayer from './greenPlayer'
+import gameState from './gameState'
 
 const reducer = combineReducers({
   redPlayer,
   yellowPlayer,
   bluePlayer,
-  greenPlayer
+  greenPlayer,
+  gameState
 })
+
 const middleware = composeWithDevTools(
   applyMiddleware(thunkMiddleware, createLogger({collapsed: true}))
 )
+
 const store = createStore(reducer, middleware)
 
 export default store

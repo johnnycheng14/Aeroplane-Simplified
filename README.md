@@ -10,4 +10,4 @@ If the player rolled a 6, they take another turn. However, if they rolled three 
 
 # Simplified Version
 
-The basic track is reduced from 52 spaces plus the ladder to 20 spaces, no flight spaces, and no ladder. Players also only need to move 3 pieces counterclockwise around the board and return home.
+The basic track is reduced from 52 spaces plus the ladder to 20 spaces, no flight spaces, and no ladder. Players also only need to move 3 pieces around the board and return home.
